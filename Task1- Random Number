@@ -1,0 +1,25 @@
+import java.util.*;
+public class RandomNum {
+	public static void main(String[] args) {
+		Random rd = new Random();
+		int rand = rd.nextInt(100) + 1;
+		Scanner sc = new Scanner(System.in);
+
+         do {
+	         System.out.println("Guess a random number between 1 to 100 :");
+	         int number = sc.nextInt();
+
+	         if (number == rand) {
+		         System.out.println("Congratulations, You won !!!");
+		         break;
+	         } else if (number < rand) {
+		         System.out.println("Guess higher number than now !!");
+	         } else {
+		         System.out.println("Guess lower number than now !!");
+	         }
+
+         }
+	         while(true);
+	}
+}
+
